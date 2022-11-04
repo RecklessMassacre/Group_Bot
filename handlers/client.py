@@ -24,14 +24,14 @@ async def start(message: types.Message):
 async def cock_size(message: types.Message):
     size = get_cock_size()
     if size < 0:
-        await message.answer(f"your size is {size} см. Позравляю, вы сегодня девотька {choice(GIRL_EMOJI)}")
+        await message.answer(f"Ваш cock size {size} см. Позравляю, вы сегодня девотька {choice(GIRL_EMOJI)}")
     elif size > 15:
-        await message.answer(f"your size is {size} см. Да вы половой гигант сегодня {choice(HAPPY_EMOJI)}")
-    elif size < 10:
+        await message.answer(f"Ваш cock size {size} см. Да вы половой гигант сегодня {choice(HAPPY_EMOJI)}")
+    elif size < 12:
         await message.answer(
-            f"your size is {size} см. {choice(SAD_EMOJI)} Возможно, ваша половая зрелость еще впереди...")
+            f"Ваш cock {size} см. {choice(SAD_EMOJI)} Возможно, ваша половая зрелость еще впереди...")
     else:
-        await message.answer(f"your size is {size} см. В пределах нормы 😐")
+        await message.answer(f"Ваш cock size {size} см. В пределах нормы 😐")
 
 
 def get_cock_size():
