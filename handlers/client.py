@@ -7,20 +7,11 @@ HAPPY_EMOJI = ['😀', '😏', '😱', '😂', '😁', '😂', '😉', '😊', '
 GIRL_EMOJI = ['🥰', '😍', '🤭', '😻', '😍', '👉👈']
 
 
-# @dp.message_handler()
-# async def echo(message: types.Message):
-#     await message.answer(message.text)
-#     await message.reply(message.text)  # answers using tg reply system
-#     await bot.send_message(message.from_user.id, message.text)  # privately reply
-
-
-# @dp.message_handler(commands=['start', 'help'])
 async def start(message: types.Message):
     txt = "/size, /s - Daily cock size"
     await message.answer(txt)
 
 
-# @dp.message_handler(commands=['size', 's'])
 async def cock_size(message: types.Message):
     size = get_cock_size()
     if size < 0:
